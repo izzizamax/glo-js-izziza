@@ -25,6 +25,7 @@ const closeModal = function() {
 buttonCart.addEventListener('click', openModal);
 buttonCloseModal.addEventListener('click', closeModal);
 
+// Close modal when click on overlay
 document.onclick = function(e) {
 	let target = e.target;
 	if (target.classList.contains('overlay')) {
@@ -32,6 +33,7 @@ document.onclick = function(e) {
 	}
 }
 
+// Scroll smooth
 {
 	const scrollLinks = document.querySelectorAll('a.scroll-link');
 
